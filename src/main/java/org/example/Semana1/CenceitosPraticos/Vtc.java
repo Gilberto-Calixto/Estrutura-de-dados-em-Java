@@ -8,13 +8,19 @@ public class Vtc {
     private int totalDeAlunos = 0;
 
     public void adiciona(Aluno aluno) {
-        for (int i = 0; i <= this.alunos.length;i++){
+
+        //#2
+        this.alunos[this.totalDeAlunos] = aluno;
+        this.totalDeAlunos++;
+
+        //#1Primeira implementação
+        /*for (int i = 0; i <= this.alunos.length;i++){
             if (alunos[i] == null){
                 alunos[i] = aluno;
                 break;
             }
-        }
-// implementação
+        }*/
+
     }
     public void adiciona(int posicao, Aluno aluno) {
 
